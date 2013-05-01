@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14743" started-at="2013-05-01T22:17:51Z" finished-at="2013-05-01T22:18:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14743" started-at="2013-05-01T22:17:51Z" finished-at="2013-05-01T22:18:05Z">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpSelenium()[pri:0, instance:TestRunner@d576e70]" name="setUpSelenium" is-config="true" duration-ms="16334" started-at="2013-05-01T23:17:34Z" finished-at="2013-05-01T23:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSelenium -->
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:TestRunner@d576e70]" name="openHomePage" duration-ms="6754" started-at="2013-05-01T23:17:51Z" description="Open the homepage" finished-at="2013-05-01T23:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openHomePage -->
+        <test-method status="PASS" signature="searchAndGo()[pri:0, instance:TestRunner@d576e70]" name="searchAndGo" duration-ms="4169" started-at="2013-05-01T23:17:57Z" description="Type &#039;huddle&#039; into search field and click search button" depends-on-methods="TestRunner.openHomePage" finished-at="2013-05-01T23:18:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndGo -->
+        <test-method status="PASS" signature="verifyFirstPage()[pri:0, instance:TestRunner@d576e70]" name="verifyFirstPage" duration-ms="237" started-at="2013-05-01T23:18:02Z" description="Verify we&#039;re on the 1st page" depends-on-methods="TestRunner.searchAndGo" finished-at="2013-05-01T23:18:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstPage -->
+        <test-method status="PASS" signature="clickNext()[pri:0, instance:TestRunner@d576e70]" name="clickNext" duration-ms="1609" started-at="2013-05-01T23:18:02Z" description="Click the &#039;next&#039; button" depends-on-methods="TestRunner.verifyFirstPage" finished-at="2013-05-01T23:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNext -->
+        <test-method status="PASS" signature="verifySecondPage()[pri:0, instance:TestRunner@d576e70]" name="verifySecondPage" duration-ms="46" started-at="2013-05-01T23:18:04Z" description="Verify we&#039;re on the 2nd page" depends-on-methods="TestRunner.clickNext" finished-at="2013-05-01T23:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySecondPage -->
+        <test-method status="PASS" signature="clickPrev()[pri:0, instance:TestRunner@d576e70]" name="clickPrev" duration-ms="1774" started-at="2013-05-01T23:18:04Z" description="Click the &#039;prev&#039; button" depends-on-methods="TestRunner.verifySecondPage" finished-at="2013-05-01T23:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickPrev -->
+        <test-method status="PASS" signature="verifyFirstPageAgain()[pri:0, instance:TestRunner@d576e70]" name="verifyFirstPageAgain" duration-ms="109" started-at="2013-05-01T23:18:05Z" description="Verify we&#039;re back at the first page" depends-on-methods="TestRunner.clickPrev" finished-at="2013-05-01T23:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstPageAgain -->
+        <test-method status="PASS" signature="shutDownSelenium()[pri:0, instance:TestRunner@d576e70]" name="shutDownSelenium" is-config="true" duration-ms="273" started-at="2013-05-01T23:18:06Z" finished-at="2013-05-01T23:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownSelenium -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
