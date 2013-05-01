@@ -12,14 +12,18 @@ public class HomePage
 	
 	public HomePage(WebDriver theDriver)
 	{
+		//Pass in the driver and navigate to the homepage
 		driver = theDriver;
 		driver.get(URL);
+		
+		//Store the elements on the page
 		searchBox = driver.findElement(By.id("topSearchTextBox"));
 		goButton = driver.findElement(By.id("topSearchSubmit"));
 	}
 	
 	public SearchResultsPage searchAndGo(String data)
 	{
+		//Type the data into the search box and click the search button
 		searchBox.sendKeys(data);
 		goButton.click();
 		SearchResultsPage results = new SearchResultsPage(driver);
